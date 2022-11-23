@@ -71,9 +71,9 @@ namespace QTNPP_PEPSI
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QTNPP_PEPSI.Properties.Resources.power;
-            this.pictureBox1.Location = new System.Drawing.Point(1327, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(1332, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 28);
+            this.pictureBox1.Size = new System.Drawing.Size(33, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 68;
             this.pictureBox1.TabStop = false;

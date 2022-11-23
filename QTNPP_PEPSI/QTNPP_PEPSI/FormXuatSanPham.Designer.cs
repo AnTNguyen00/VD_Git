@@ -355,6 +355,7 @@ namespace QTNPP_PEPSI
             this.GvPhieuXuat.RowTemplate.Height = 24;
             this.GvPhieuXuat.Size = new System.Drawing.Size(374, 672);
             this.GvPhieuXuat.TabIndex = 5;
+            this.GvPhieuXuat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GvPhieuXuat_CellClick);
             // 
             // txtSearch
             // 
@@ -380,6 +381,7 @@ namespace QTNPP_PEPSI
             this.btnLoc.TabIndex = 3;
             this.btnLoc.Text = "Lọc phiếu";
             this.btnLoc.TextColor = System.Drawing.Color.White;
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
             // groupPanel1
             // 
@@ -464,6 +466,7 @@ namespace QTNPP_PEPSI
             this.buttonX4.TabIndex = 56;
             this.buttonX4.Text = "...";
             this.buttonX4.TextColor = System.Drawing.Color.White;
+            this.buttonX4.Click += new System.EventHandler(this.buttonX4_Click);
             // 
             // cbbTenKhachHang
             // 
@@ -773,6 +776,7 @@ namespace QTNPP_PEPSI
             this.GvChiTietPhieuXuat.RowTemplate.Height = 24;
             this.GvChiTietPhieuXuat.Size = new System.Drawing.Size(981, 190);
             this.GvChiTietPhieuXuat.TabIndex = 46;
+            this.GvChiTietPhieuXuat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GvChiTietPhieuXuat_CellClick);
             // 
             // groupPanel2
             // 
@@ -860,6 +864,7 @@ namespace QTNPP_PEPSI
             this.buttonX3.TabIndex = 47;
             this.buttonX3.Text = "...";
             this.buttonX3.TextColor = System.Drawing.Color.White;
+            this.buttonX3.Click += new System.EventHandler(this.buttonX3_Click);
             // 
             // labelX6
             // 
@@ -888,6 +893,7 @@ namespace QTNPP_PEPSI
             this.buttonX2.TabIndex = 46;
             this.buttonX2.Text = "...";
             this.buttonX2.TextColor = System.Drawing.Color.White;
+            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
             // 
             // labelX10
             // 
@@ -917,6 +923,7 @@ namespace QTNPP_PEPSI
             this.txtSoLuong.Size = new System.Drawing.Size(156, 22);
             this.txtSoLuong.TabIndex = 45;
             this.txtSoLuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress);
             // 
             // cbbMaLoaiSP
             // 
@@ -929,6 +936,7 @@ namespace QTNPP_PEPSI
             this.cbbMaLoaiSP.Size = new System.Drawing.Size(196, 22);
             this.cbbMaLoaiSP.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cbbMaLoaiSP.TabIndex = 39;
+            this.cbbMaLoaiSP.SelectedIndexChanged += new System.EventHandler(this.cbbMaLoaiSP_SelectedIndexChanged);
             // 
             // lbsoluong
             // 
@@ -971,6 +979,7 @@ namespace QTNPP_PEPSI
             this.cbbMaSP.Size = new System.Drawing.Size(196, 22);
             this.cbbMaSP.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cbbMaSP.TabIndex = 40;
+            this.cbbMaSP.SelectedIndexChanged += new System.EventHandler(this.cbbMaSP_SelectedIndexChanged);
             // 
             // lb_mathuoc
             // 
@@ -1072,6 +1081,8 @@ namespace QTNPP_PEPSI
             this.txtGiaXuat.Size = new System.Drawing.Size(196, 22);
             this.txtGiaXuat.TabIndex = 42;
             this.txtGiaXuat.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtGiaXuat.TextChanged += new System.EventHandler(this.txtGiaXuat_TextChanged);
+            this.txtGiaXuat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaXuat_KeyPress);
             // 
             // panelEx2
             // 
@@ -1110,6 +1121,7 @@ namespace QTNPP_PEPSI
             this.btnXoaCTPX.TabIndex = 13;
             this.btnXoaCTPX.Text = "Xóa CTPX";
             this.btnXoaCTPX.TextColor = System.Drawing.Color.White;
+            this.btnXoaCTPX.Click += new System.EventHandler(this.btnXoaCTPX_Click);
             // 
             // btnXuatPX
             // 
@@ -1123,6 +1135,7 @@ namespace QTNPP_PEPSI
             this.btnXuatPX.TabIndex = 12;
             this.btnXuatPX.Text = "Xuất PX";
             this.btnXuatPX.TextColor = System.Drawing.Color.White;
+            this.btnXuatPX.Click += new System.EventHandler(this.btnXuatPX_Click);
             // 
             // btnThoat
             // 
@@ -1136,6 +1149,7 @@ namespace QTNPP_PEPSI
             this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextColor = System.Drawing.Color.White;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnSua
             // 
@@ -1149,6 +1163,7 @@ namespace QTNPP_PEPSI
             this.btnSua.TabIndex = 10;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextColor = System.Drawing.Color.White;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLapPX
             // 
@@ -1163,6 +1178,7 @@ namespace QTNPP_PEPSI
             this.btnLapPX.TabIndex = 9;
             this.btnLapPX.Text = "Lập PX";
             this.btnLapPX.TextColor = System.Drawing.Color.White;
+            this.btnLapPX.Click += new System.EventHandler(this.btnLapPX_Click);
             // 
             // btnXoa
             // 
@@ -1176,6 +1192,7 @@ namespace QTNPP_PEPSI
             this.btnXoa.TabIndex = 8;
             this.btnXoa.Text = "Xóa PX";
             this.btnXoa.TextColor = System.Drawing.Color.White;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -1190,6 +1207,7 @@ namespace QTNPP_PEPSI
             this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextColor = System.Drawing.Color.White;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnTaoMoi
             // 
@@ -1203,6 +1221,7 @@ namespace QTNPP_PEPSI
             this.btnTaoMoi.TabIndex = 6;
             this.btnTaoMoi.Text = "Tạo Mới";
             this.btnTaoMoi.TextColor = System.Drawing.Color.White;
+            this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
             // 
             // FormXuatSanPham
             // 
@@ -1213,6 +1232,7 @@ namespace QTNPP_PEPSI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormXuatSanPham";
             this.Text = "FormXuatSanPham";
+            this.Load += new System.EventHandler(this.FormXuatSanPham_Load);
             this.groupPanel5.ResumeLayout(false);
             this.groupPanel6.ResumeLayout(false);
             this.panelEx5.ResumeLayout(false);

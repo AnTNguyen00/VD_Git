@@ -211,6 +211,7 @@ namespace QTNPP_PEPSI
             this.cbbQuyen.Size = new System.Drawing.Size(196, 22);
             this.cbbQuyen.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cbbQuyen.TabIndex = 92;
+            this.cbbQuyen.SelectedIndexChanged += new System.EventHandler(this.cbbQuyen_SelectedIndexChanged);
             // 
             // groupPanel1
             // 
@@ -289,6 +290,7 @@ namespace QTNPP_PEPSI
             this.btnThoat.TabIndex = 87;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextColor = System.Drawing.Color.White;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // labelX1
             // 
@@ -317,6 +319,7 @@ namespace QTNPP_PEPSI
             this.btnXacNhan.TabIndex = 86;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.TextColor = System.Drawing.Color.White;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // lb_tenkh
             // 
@@ -356,6 +359,7 @@ namespace QTNPP_PEPSI
             this.cbbMaNhanVien.Size = new System.Drawing.Size(196, 22);
             this.cbbMaNhanVien.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cbbMaNhanVien.TabIndex = 61;
+            this.cbbMaNhanVien.SelectedIndexChanged += new System.EventHandler(this.cbbMaNhanVien_SelectedIndexChanged);
             // 
             // buttonX1
             // 
@@ -369,6 +373,7 @@ namespace QTNPP_PEPSI
             this.buttonX1.TabIndex = 86;
             this.buttonX1.Text = ">>";
             this.buttonX1.TextColor = System.Drawing.Color.White;
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // buttonX2
             // 
@@ -382,6 +387,7 @@ namespace QTNPP_PEPSI
             this.buttonX2.TabIndex = 90;
             this.buttonX2.Text = "<<";
             this.buttonX2.TextColor = System.Drawing.Color.White;
+            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
             // 
             // panelEx2
             // 
@@ -416,6 +422,7 @@ namespace QTNPP_PEPSI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormQuanLyTaiKhoan";
             this.Text = "FormQuanLyTaiKhoan";
+            this.Load += new System.EventHandler(this.FormQuanLyTaiKhoan_Load);
             this.groupPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GvQuyenDuoc)).EndInit();
             this.groupPanel2.ResumeLayout(false);

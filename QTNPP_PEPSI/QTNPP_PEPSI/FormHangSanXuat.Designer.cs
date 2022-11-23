@@ -177,6 +177,7 @@ namespace QTNPP_PEPSI
             this.GVHangSX.RowTemplate.Height = 24;
             this.GVHangSX.Size = new System.Drawing.Size(697, 265);
             this.GVHangSX.TabIndex = 46;
+            this.GVHangSX.Click += new System.EventHandler(this.GVHangSX_Click);
             // 
             // panelEx2
             // 
@@ -209,9 +210,10 @@ namespace QTNPP_PEPSI
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 31);
             this.btnSua.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSua.TabIndex = 12;
+            this.btnSua.TabIndex = 4;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextColor = System.Drawing.Color.White;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThoat
             // 
@@ -222,9 +224,10 @@ namespace QTNPP_PEPSI
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 31);
             this.btnThoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnThoat.TabIndex = 11;
+            this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextColor = System.Drawing.Color.White;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnXoa
             // 
@@ -235,9 +238,10 @@ namespace QTNPP_PEPSI
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 31);
             this.btnXoa.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnXoa.TabIndex = 8;
+            this.btnXoa.TabIndex = 3;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextColor = System.Drawing.Color.White;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -248,9 +252,10 @@ namespace QTNPP_PEPSI
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 31);
             this.btnThem.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnThem.TabIndex = 7;
+            this.btnThem.TabIndex = 2;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextColor = System.Drawing.Color.White;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnTaoMoi
             // 
@@ -264,6 +269,7 @@ namespace QTNPP_PEPSI
             this.btnTaoMoi.TabIndex = 6;
             this.btnTaoMoi.Text = "Tạo Mới";
             this.btnTaoMoi.TextColor = System.Drawing.Color.White;
+            this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
             // 
             // groupPanel1
             // 
@@ -338,7 +344,7 @@ namespace QTNPP_PEPSI
             this.txtMaHangSX.Name = "txtMaHangSX";
             this.txtMaHangSX.PreventEnterBeep = true;
             this.txtMaHangSX.Size = new System.Drawing.Size(308, 22);
-            this.txtMaHangSX.TabIndex = 57;
+            this.txtMaHangSX.TabIndex = 0;
             // 
             // txtTenHangSX
             // 
@@ -352,7 +358,7 @@ namespace QTNPP_PEPSI
             this.txtTenHangSX.Name = "txtTenHangSX";
             this.txtTenHangSX.PreventEnterBeep = true;
             this.txtTenHangSX.Size = new System.Drawing.Size(308, 22);
-            this.txtTenHangSX.TabIndex = 58;
+            this.txtTenHangSX.TabIndex = 1;
             // 
             // labelX1
             // 
@@ -393,6 +399,7 @@ namespace QTNPP_PEPSI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormHangSanXuat";
             this.Text = "FormHangSanXuat";
+            this.Load += new System.EventHandler(this.FormHangSanXuat_Load);
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GVHangSX)).EndInit();

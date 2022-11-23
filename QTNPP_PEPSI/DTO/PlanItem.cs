@@ -25,7 +25,7 @@ namespace DTO
     }
 
     public enum EPlanItem
-    {
+    { 
         DONE, DOING, COMING, MISSED
     }
 }

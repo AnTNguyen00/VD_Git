@@ -15,7 +15,7 @@ namespace QTNPP_PEPSI
     public partial class FormTrangChu : DevComponents.DotNetBar.Office2007RibbonForm
     {
         FormDangNhap dangnhap = new FormDangNhap();
-        PhanQuyen_DALBLL phanquyen = new PhanQuyen_DALBLL();
+        PhanQuyen_DALPLL phanquyen = new PhanQuyen_DALPLL();
 
         public FormTrangChu()
         {
@@ -272,7 +272,7 @@ namespace QTNPP_PEPSI
 
         private void FormTrangChu_Load(object sender, EventArgs e)
         {
-            List<PHANQUYEN> lst_pq = phanquyen.load_QuyenChuaCo(FormDangNhap.nv.MANHOMNV);
+            List<PHANQUYEN> lst_pq = phanquyen.load_QuyenChuaCo1(FormDangNhap.nv.MANHOMNV);
             string maCheck = "";
             labelItem1.Text = "Xin Chào, " + FormDangNhap.nv.HOTENNV;
 
@@ -441,6 +441,7 @@ namespace QTNPP_PEPSI
             pictureBox1.Controls.Add(vl);
             vl.Show();
         }
+
         private void buttonItem18_Click(object sender, EventArgs e)
         {
             FormDuDoanSP vl = new FormDuDoanSP();

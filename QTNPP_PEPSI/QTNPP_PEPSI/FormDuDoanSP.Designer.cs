@@ -48,6 +48,7 @@ namespace QTNPP_PEPSI
             this.btnBatDau.TabIndex = 0;
             this.btnBatDau.Text = "Bắt đầu";
             this.btnBatDau.TextColor = System.Drawing.Color.White;
+            this.btnBatDau.Click += new System.EventHandler(this.btnBatDau_Click);
             // 
             // btnThoat
             // 
@@ -60,6 +61,7 @@ namespace QTNPP_PEPSI
             this.btnThoat.TabIndex = 1;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextColor = System.Drawing.Color.White;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // groupPanel1
             // 
@@ -115,6 +117,7 @@ namespace QTNPP_PEPSI
             this.pictureBox_CaiDat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_CaiDat.TabIndex = 3;
             this.pictureBox_CaiDat.TabStop = false;
+            this.pictureBox_CaiDat.Click += new System.EventHandler(this.pictureBox_CaiDat_Click);
             // 
             // FormDuDoanSP
             // 

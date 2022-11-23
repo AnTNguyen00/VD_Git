@@ -58,6 +58,7 @@ namespace QTNPP_PEPSI
             this.ckDone.Size = new System.Drawing.Size(27, 23);
             this.ckDone.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ckDone.TabIndex = 0;
+            this.ckDone.CheckedChanged += new System.EventHandler(this.ckDone_CheckedChanged);
             // 
             // txtCongViec
             // 
@@ -138,6 +139,7 @@ namespace QTNPP_PEPSI
             this.btnSua.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnSua.TabIndex = 29;
             this.btnSua.Text = "Cập nhật";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -149,6 +151,7 @@ namespace QTNPP_PEPSI
             this.btnXoa.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnXoa.TabIndex = 30;
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // AJob
             // 

@@ -38,7 +38,7 @@ namespace QTNPP_PEPSI
 
             tmNotify.Start();
             appTime = 0;
-        
+
         }
 
         void LoadMaTran()

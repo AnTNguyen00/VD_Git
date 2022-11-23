@@ -15,6 +15,7 @@ namespace QTNPP_PEPSI
     {
         NhanVien_DALBLL NV = new NhanVien_DALBLL();
         public static NHANVIEN nv;
+
         public FormDangNhap()
         {
             InitializeComponent();

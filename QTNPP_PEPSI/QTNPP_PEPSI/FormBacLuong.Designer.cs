@@ -159,7 +159,6 @@ namespace QTNPP_PEPSI
             this.btnXoaCT.TabIndex = 10;
             this.btnXoaCT.Text = "Xóa";
             this.btnXoaCT.TextColor = System.Drawing.Color.White;
-            this.btnXoaCT.Click += new System.EventHandler(this.btnXoaCT_Click);
             // 
             // btnSuaCT
             // 
@@ -173,7 +172,6 @@ namespace QTNPP_PEPSI
             this.btnSuaCT.TabIndex = 9;
             this.btnSuaCT.Text = "Sửa";
             this.btnSuaCT.TextColor = System.Drawing.Color.White;
-            this.btnSuaCT.Click += new System.EventHandler(this.btnSuaCT_Click);
             // 
             // btnThemCT
             // 
@@ -187,7 +185,6 @@ namespace QTNPP_PEPSI
             this.btnThemCT.TabIndex = 8;
             this.btnThemCT.Text = "Thêm";
             this.btnThemCT.TextColor = System.Drawing.Color.White;
-            this.btnThemCT.Click += new System.EventHandler(this.btnThemCT_Click);
             // 
             // btnTaoMoiCT
             // 
@@ -201,7 +198,6 @@ namespace QTNPP_PEPSI
             this.btnTaoMoiCT.TabIndex = 7;
             this.btnTaoMoiCT.Text = "Tạo Mới";
             this.btnTaoMoiCT.TextColor = System.Drawing.Color.White;
-            this.btnTaoMoiCT.Click += new System.EventHandler(this.btnTaoMoiCT_Click);
             // 
             // groupPanel4
             // 
@@ -281,7 +277,6 @@ namespace QTNPP_PEPSI
             this.GVChiTietBacLuong.RowTemplate.Height = 24;
             this.GVChiTietBacLuong.Size = new System.Drawing.Size(660, 224);
             this.GVChiTietBacLuong.TabIndex = 0;
-            this.GVChiTietBacLuong.Click += new System.EventHandler(this.GVChiTietBacLuong_Click);
             // 
             // groupPanel3
             // 
@@ -359,7 +354,7 @@ namespace QTNPP_PEPSI
             this.cbbNhanVien.Name = "cbbNhanVien";
             this.cbbNhanVien.Size = new System.Drawing.Size(139, 22);
             this.cbbNhanVien.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cbbNhanVien.TabIndex = 3;
+            this.cbbNhanVien.TabIndex = 76;
             // 
             // DTPDenNgay
             // 
@@ -403,7 +398,7 @@ namespace QTNPP_PEPSI
             this.DTPDenNgay.Name = "DTPDenNgay";
             this.DTPDenNgay.Size = new System.Drawing.Size(200, 22);
             this.DTPDenNgay.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.DTPDenNgay.TabIndex = 5;
+            this.DTPDenNgay.TabIndex = 75;
             // 
             // DTPTuNgay
             // 
@@ -447,7 +442,7 @@ namespace QTNPP_PEPSI
             this.DTPTuNgay.Name = "DTPTuNgay";
             this.DTPTuNgay.Size = new System.Drawing.Size(200, 22);
             this.DTPTuNgay.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.DTPTuNgay.TabIndex = 4;
+            this.DTPTuNgay.TabIndex = 74;
             // 
             // labelX3
             // 
@@ -528,7 +523,7 @@ namespace QTNPP_PEPSI
             this.txtHeSoLuong.Name = "txtHeSoLuong";
             this.txtHeSoLuong.PreventEnterBeep = true;
             this.txtHeSoLuong.Size = new System.Drawing.Size(139, 22);
-            this.txtHeSoLuong.TabIndex = 2;
+            this.txtHeSoLuong.TabIndex = 73;
             // 
             // txtTenBacLuong
             // 
@@ -541,7 +536,7 @@ namespace QTNPP_PEPSI
             this.txtTenBacLuong.Name = "txtTenBacLuong";
             this.txtTenBacLuong.PreventEnterBeep = true;
             this.txtTenBacLuong.Size = new System.Drawing.Size(139, 22);
-            this.txtTenBacLuong.TabIndex = 1;
+            this.txtTenBacLuong.TabIndex = 72;
             // 
             // txtMaBacLuong
             // 
@@ -554,7 +549,7 @@ namespace QTNPP_PEPSI
             this.txtMaBacLuong.Name = "txtMaBacLuong";
             this.txtMaBacLuong.PreventEnterBeep = true;
             this.txtMaBacLuong.Size = new System.Drawing.Size(139, 22);
-            this.txtMaBacLuong.TabIndex = 0;
+            this.txtMaBacLuong.TabIndex = 71;
             // 
             // labelX2
             // 
@@ -635,7 +630,6 @@ namespace QTNPP_PEPSI
             this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextColor = System.Drawing.Color.White;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnSua
             // 
@@ -649,7 +643,6 @@ namespace QTNPP_PEPSI
             this.btnSua.TabIndex = 10;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextColor = System.Drawing.Color.White;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -663,7 +656,6 @@ namespace QTNPP_PEPSI
             this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextColor = System.Drawing.Color.White;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -677,7 +669,6 @@ namespace QTNPP_PEPSI
             this.btnThem.TabIndex = 8;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextColor = System.Drawing.Color.White;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnTaoMoi
             // 
@@ -691,7 +682,6 @@ namespace QTNPP_PEPSI
             this.btnTaoMoi.TabIndex = 7;
             this.btnTaoMoi.Text = "Tạo Mới";
             this.btnTaoMoi.TextColor = System.Drawing.Color.White;
-            this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
             // 
             // groupPanel2
             // 
@@ -771,18 +761,16 @@ namespace QTNPP_PEPSI
             this.GVBacLuong.RowTemplate.Height = 24;
             this.GVBacLuong.Size = new System.Drawing.Size(529, 485);
             this.GVBacLuong.TabIndex = 0;
-            this.GVBacLuong.Click += new System.EventHandler(this.GVBacLuong_Click);
             // 
             // FormBacLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1245, 622);
+            this.ClientSize = new System.Drawing.Size(1245, 621);
             this.Controls.Add(this.groupPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormBacLuong";
             this.Text = "FormBacLuong";
-            this.Load += new System.EventHandler(this.FormBacLuong_Load);
             this.groupPanel1.ResumeLayout(false);
             this.panelEx4.ResumeLayout(false);
             this.groupPanel4.ResumeLayout(false);

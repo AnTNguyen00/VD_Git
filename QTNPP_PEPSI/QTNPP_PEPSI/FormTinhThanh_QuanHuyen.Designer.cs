@@ -202,6 +202,7 @@ namespace QTNPP_PEPSI
             this.GVQuanHuyen.RowTemplate.Height = 24;
             this.GVQuanHuyen.Size = new System.Drawing.Size(590, 322);
             this.GVQuanHuyen.TabIndex = 78;
+            this.GVQuanHuyen.Click += new System.EventHandler(this.GVQuanHuyen_Click);
             // 
             // panelEx1
             // 
@@ -236,6 +237,7 @@ namespace QTNPP_PEPSI
             this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextColor = System.Drawing.Color.White;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnXoaTT
             // 
@@ -249,6 +251,7 @@ namespace QTNPP_PEPSI
             this.btnXoaTT.TabIndex = 8;
             this.btnXoaTT.Text = "Xóa";
             this.btnXoaTT.TextColor = System.Drawing.Color.White;
+            this.btnXoaTT.Click += new System.EventHandler(this.btnXoaTT_Click);
             // 
             // btnThemTT
             // 
@@ -262,6 +265,7 @@ namespace QTNPP_PEPSI
             this.btnThemTT.TabIndex = 7;
             this.btnThemTT.Text = "Thêm";
             this.btnThemTT.TextColor = System.Drawing.Color.White;
+            this.btnThemTT.Click += new System.EventHandler(this.btnThemTT_Click);
             // 
             // btnTaoMoiTT
             // 
@@ -275,6 +279,7 @@ namespace QTNPP_PEPSI
             this.btnTaoMoiTT.TabIndex = 6;
             this.btnTaoMoiTT.Text = "Tạo Mới";
             this.btnTaoMoiTT.TextColor = System.Drawing.Color.White;
+            this.btnTaoMoiTT.Click += new System.EventHandler(this.btnTaoMoiTT_Click);
             // 
             // groupPanel4
             // 
@@ -354,6 +359,7 @@ namespace QTNPP_PEPSI
             this.GvTinhThanh.RowTemplate.Height = 24;
             this.GvTinhThanh.Size = new System.Drawing.Size(590, 285);
             this.GvTinhThanh.TabIndex = 78;
+            this.GvTinhThanh.Click += new System.EventHandler(this.GvTinhThanh_Click);
             // 
             // groupPanel3
             // 
@@ -654,6 +660,7 @@ namespace QTNPP_PEPSI
             this.btnXoaQH.TabIndex = 8;
             this.btnXoaQH.Text = "Xóa";
             this.btnXoaQH.TextColor = System.Drawing.Color.White;
+            this.btnXoaQH.Click += new System.EventHandler(this.btnXoaQH_Click);
             // 
             // btnThemQH
             // 
@@ -667,6 +674,7 @@ namespace QTNPP_PEPSI
             this.btnThemQH.TabIndex = 7;
             this.btnThemQH.Text = "Thêm";
             this.btnThemQH.TextColor = System.Drawing.Color.White;
+            this.btnThemQH.Click += new System.EventHandler(this.btnThemQH_Click);
             // 
             // btnTaoMoiQH
             // 
@@ -680,6 +688,7 @@ namespace QTNPP_PEPSI
             this.btnTaoMoiQH.TabIndex = 6;
             this.btnTaoMoiQH.Text = "Tạo Mới";
             this.btnTaoMoiQH.TextColor = System.Drawing.Color.White;
+            this.btnTaoMoiQH.Click += new System.EventHandler(this.btnTaoMoiQH_Click);
             // 
             // FormTinhThanh_QuanHuyen
             // 
@@ -690,6 +699,7 @@ namespace QTNPP_PEPSI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTinhThanh_QuanHuyen";
             this.Text = "FormTinhThanh_QuanHuyen";
+            this.Load += new System.EventHandler(this.FormTinhThanh_QuanHuyen_Load);
             this.groupPanel5.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GVQuanHuyen)).EndInit();

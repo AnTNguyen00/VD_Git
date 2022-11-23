@@ -99,7 +99,7 @@ namespace QTNPP_PEPSI
             this.groupPanel3.Location = new System.Drawing.Point(0, 0);
             this.groupPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(1199, 740);
+            this.groupPanel3.Size = new System.Drawing.Size(1199, 682);
             // 
             // 
             // 
@@ -300,7 +300,7 @@ namespace QTNPP_PEPSI
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PreventEnterBeep = true;
             this.txtMatKhau.Size = new System.Drawing.Size(195, 22);
-            this.txtMatKhau.TabIndex = 2;
+            this.txtMatKhau.TabIndex = 58;
             // 
             // labelX2
             // 
@@ -359,7 +359,7 @@ namespace QTNPP_PEPSI
             this.dTNgayBDL.Name = "dTNgayBDL";
             this.dTNgayBDL.Size = new System.Drawing.Size(196, 22);
             this.dTNgayBDL.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dTNgayBDL.TabIndex = 10;
+            this.dTNgayBDL.TabIndex = 93;
             this.dTNgayBDL.Value = new System.DateTime(2022, 10, 30, 0, 0, 0, 0);
             // 
             // labelX1
@@ -419,7 +419,7 @@ namespace QTNPP_PEPSI
             this.dTNgayKTL.Name = "dTNgayKTL";
             this.dTNgayKTL.Size = new System.Drawing.Size(196, 22);
             this.dTNgayKTL.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dTNgayKTL.TabIndex = 11;
+            this.dTNgayKTL.TabIndex = 92;
             this.dTNgayKTL.Value = new System.DateTime(2022, 10, 30, 0, 0, 0, 0);
             // 
             // txtMaNV
@@ -434,7 +434,7 @@ namespace QTNPP_PEPSI
             this.txtMaNV.PreventEnterBeep = true;
             this.txtMaNV.ReadOnly = true;
             this.txtMaNV.Size = new System.Drawing.Size(196, 22);
-            this.txtMaNV.TabIndex = 0;
+            this.txtMaNV.TabIndex = 57;
             // 
             // txtHoTen
             // 
@@ -448,7 +448,7 @@ namespace QTNPP_PEPSI
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.PreventEnterBeep = true;
             this.txtHoTen.Size = new System.Drawing.Size(195, 22);
-            this.txtHoTen.TabIndex = 5;
+            this.txtHoTen.TabIndex = 91;
             // 
             // labelX6
             // 
@@ -477,7 +477,7 @@ namespace QTNPP_PEPSI
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.PreventEnterBeep = true;
             this.txtTenDN.Size = new System.Drawing.Size(195, 22);
-            this.txtTenDN.TabIndex = 1;
+            this.txtTenDN.TabIndex = 88;
             // 
             // txtSDT
             // 
@@ -491,7 +491,7 @@ namespace QTNPP_PEPSI
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.PreventEnterBeep = true;
             this.txtSDT.Size = new System.Drawing.Size(195, 22);
-            this.txtSDT.TabIndex = 3;
+            this.txtSDT.TabIndex = 64;
             // 
             // cbbMaNhomNV
             // 
@@ -503,7 +503,7 @@ namespace QTNPP_PEPSI
             this.cbbMaNhomNV.Name = "cbbMaNhomNV";
             this.cbbMaNhomNV.Size = new System.Drawing.Size(196, 22);
             this.cbbMaNhomNV.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cbbMaNhomNV.TabIndex = 4;
+            this.cbbMaNhomNV.TabIndex = 87;
             // 
             // labelX7
             // 
@@ -560,7 +560,7 @@ namespace QTNPP_PEPSI
             this.cbbTrinhDo.Name = "cbbTrinhDo";
             this.cbbTrinhDo.Size = new System.Drawing.Size(196, 22);
             this.cbbTrinhDo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cbbTrinhDo.TabIndex = 12;
+            this.cbbTrinhDo.TabIndex = 84;
             // 
             // labelX8
             // 
@@ -588,7 +588,7 @@ namespace QTNPP_PEPSI
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.PreventEnterBeep = true;
             this.txtCMND.Size = new System.Drawing.Size(196, 22);
-            this.txtCMND.TabIndex = 9;
+            this.txtCMND.TabIndex = 82;
             // 
             // labelX5
             // 
@@ -632,7 +632,7 @@ namespace QTNPP_PEPSI
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.PreventEnterBeep = true;
             this.txtDiaChi.Size = new System.Drawing.Size(195, 22);
-            this.txtDiaChi.TabIndex = 7;
+            this.txtDiaChi.TabIndex = 74;
             // 
             // labelX13
             // 
@@ -691,7 +691,7 @@ namespace QTNPP_PEPSI
             this.txtLuongCoBan.Name = "txtLuongCoBan";
             this.txtLuongCoBan.PreventEnterBeep = true;
             this.txtLuongCoBan.Size = new System.Drawing.Size(195, 22);
-            this.txtLuongCoBan.TabIndex = 8;
+            this.txtLuongCoBan.TabIndex = 76;
             this.txtLuongCoBan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // dTNgaySinh
@@ -736,7 +736,7 @@ namespace QTNPP_PEPSI
             this.dTNgaySinh.Name = "dTNgaySinh";
             this.dTNgaySinh.Size = new System.Drawing.Size(196, 22);
             this.dTNgaySinh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dTNgaySinh.TabIndex = 6;
+            this.dTNgaySinh.TabIndex = 77;
             this.dTNgaySinh.Value = new System.DateTime(2022, 10, 30, 0, 0, 0, 0);
             // 
             // groupPanel2
@@ -749,7 +749,7 @@ namespace QTNPP_PEPSI
             this.groupPanel2.Location = new System.Drawing.Point(9, 379);
             this.groupPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(1181, 333);
+            this.groupPanel2.Size = new System.Drawing.Size(1181, 278);
             // 
             // 
             // 
@@ -815,9 +815,8 @@ namespace QTNPP_PEPSI
             this.GVNhanVien.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.GVNhanVien.RowHeadersWidth = 51;
             this.GVNhanVien.RowTemplate.Height = 24;
-            this.GVNhanVien.Size = new System.Drawing.Size(1169, 304);
+            this.GVNhanVien.Size = new System.Drawing.Size(1169, 249);
             this.GVNhanVien.TabIndex = 55;
-            this.GVNhanVien.Click += new System.EventHandler(this.GVNhanVien_Click);
             // 
             // panelEx2
             // 
@@ -851,10 +850,9 @@ namespace QTNPP_PEPSI
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 31);
             this.btnLuu.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnLuu.TabIndex = 16;
+            this.btnLuu.TabIndex = 13;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextColor = System.Drawing.Color.White;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnSua
             // 
@@ -865,10 +863,9 @@ namespace QTNPP_PEPSI
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 31);
             this.btnSua.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSua.TabIndex = 15;
+            this.btnSua.TabIndex = 12;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextColor = System.Drawing.Color.White;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThoat
             // 
@@ -879,10 +876,9 @@ namespace QTNPP_PEPSI
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 31);
             this.btnThoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnThoat.TabIndex = 17;
+            this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextColor = System.Drawing.Color.White;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnXoa
             // 
@@ -893,10 +889,9 @@ namespace QTNPP_PEPSI
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 31);
             this.btnXoa.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnXoa.TabIndex = 14;
+            this.btnXoa.TabIndex = 8;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextColor = System.Drawing.Color.White;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -907,10 +902,9 @@ namespace QTNPP_PEPSI
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 31);
             this.btnThem.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnThem.TabIndex = 13;
+            this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextColor = System.Drawing.Color.White;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnTaoMoi
             // 
@@ -921,21 +915,19 @@ namespace QTNPP_PEPSI
             this.btnTaoMoi.Name = "btnTaoMoi";
             this.btnTaoMoi.Size = new System.Drawing.Size(75, 31);
             this.btnTaoMoi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnTaoMoi.TabIndex = 18;
+            this.btnTaoMoi.TabIndex = 6;
             this.btnTaoMoi.Text = "Tạo Mới";
             this.btnTaoMoi.TextColor = System.Drawing.Color.White;
-            this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
             // 
             // FormNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1208, 748);
+            this.ClientSize = new System.Drawing.Size(1208, 693);
             this.Controls.Add(this.groupPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormNhanVien";
             this.Text = "FormNhanVien";
-            this.Load += new System.EventHandler(this.FormNhanVien_Load);
             this.groupPanel3.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             this.panelEx3.ResumeLayout(false);

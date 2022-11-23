@@ -136,10 +136,9 @@ namespace QTNPP_PEPSI
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(112, 35);
             this.btnThoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnThoat.TabIndex = 7;
+            this.btnThoat.TabIndex = 123;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextColor = System.Drawing.Color.White;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnDangKy
             // 
@@ -150,10 +149,9 @@ namespace QTNPP_PEPSI
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(143, 35);
             this.btnDangKy.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnDangKy.TabIndex = 4;
+            this.btnDangKy.TabIndex = 110;
             this.btnDangKy.Text = "Đăng ký tích lũy";
             this.btnDangKy.TextColor = System.Drawing.Color.White;
-            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // buttonX4
             // 
@@ -164,10 +162,9 @@ namespace QTNPP_PEPSI
             this.buttonX4.Name = "buttonX4";
             this.buttonX4.Size = new System.Drawing.Size(112, 35);
             this.buttonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX4.TabIndex = 5;
+            this.buttonX4.TabIndex = 121;
             this.buttonX4.Text = "Cập nhật CT";
             this.buttonX4.TextColor = System.Drawing.Color.White;
-            this.buttonX4.Click += new System.EventHandler(this.buttonX4_Click);
             // 
             // buttonX1
             // 
@@ -178,10 +175,9 @@ namespace QTNPP_PEPSI
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Size = new System.Drawing.Size(116, 35);
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 6;
+            this.buttonX1.TabIndex = 118;
             this.buttonX1.Text = "Hủy đăng ký";
             this.buttonX1.TextColor = System.Drawing.Color.White;
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // panelEx2
             // 
@@ -310,7 +306,7 @@ namespace QTNPP_PEPSI
             this.txtDiemTL.PreventEnterBeep = true;
             this.txtDiemTL.ReadOnly = true;
             this.txtDiemTL.Size = new System.Drawing.Size(195, 22);
-            this.txtDiemTL.TabIndex = 3;
+            this.txtDiemTL.TabIndex = 60;
             this.txtDiemTL.Text = "0";
             this.txtDiemTL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -320,7 +316,7 @@ namespace QTNPP_PEPSI
             this.cbbMaKH.Location = new System.Drawing.Point(147, 64);
             this.cbbMaKH.Name = "cbbMaKH";
             this.cbbMaKH.Size = new System.Drawing.Size(195, 24);
-            this.cbbMaKH.TabIndex = 1;
+            this.cbbMaKH.TabIndex = 61;
             // 
             // buttonX2
             // 
@@ -334,7 +330,6 @@ namespace QTNPP_PEPSI
             this.buttonX2.TabIndex = 107;
             this.buttonX2.Text = "...";
             this.buttonX2.TextColor = System.Drawing.Color.White;
-            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
             // 
             // cbMaCT
             // 
@@ -342,7 +337,7 @@ namespace QTNPP_PEPSI
             this.cbMaCT.Location = new System.Drawing.Point(145, 12);
             this.cbMaCT.Name = "cbMaCT";
             this.cbMaCT.Size = new System.Drawing.Size(195, 24);
-            this.cbMaCT.TabIndex = 0;
+            this.cbMaCT.TabIndex = 120;
             // 
             // labelX3
             // 
@@ -371,7 +366,6 @@ namespace QTNPP_PEPSI
             this.buttonX3.TabIndex = 119;
             this.buttonX3.Text = "...";
             this.buttonX3.TextColor = System.Drawing.Color.White;
-            this.buttonX3.Click += new System.EventHandler(this.buttonX3_Click);
             // 
             // DTPNgayDK
             // 
@@ -415,7 +409,7 @@ namespace QTNPP_PEPSI
             this.DTPNgayDK.Name = "DTPNgayDK";
             this.DTPNgayDK.Size = new System.Drawing.Size(194, 22);
             this.DTPNgayDK.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.DTPNgayDK.TabIndex = 2;
+            this.DTPNgayDK.TabIndex = 114;
             // 
             // labelX5
             // 
@@ -468,7 +462,6 @@ namespace QTNPP_PEPSI
             this.GV_DK_CTTB.RowTemplate.Height = 24;
             this.GV_DK_CTTB.Size = new System.Drawing.Size(761, 271);
             this.GV_DK_CTTB.TabIndex = 117;
-            this.GV_DK_CTTB.Click += new System.EventHandler(this.GV_DK_CTTB_Click);
             // 
             // FormDangKy_CTTL_CTTB
             // 
@@ -479,7 +472,6 @@ namespace QTNPP_PEPSI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDangKy_CTTL_CTTB";
             this.Text = "FormDangKy_CTTL_CTTB";
-            this.Load += new System.EventHandler(this.FormDangKy_CTTL_CTTB_Load);
             this.groupPanel2.ResumeLayout(false);
             this.panelEx3.ResumeLayout(false);
             this.panelEx2.ResumeLayout(false);

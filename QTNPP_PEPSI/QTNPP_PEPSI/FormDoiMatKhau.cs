@@ -14,8 +14,9 @@ namespace QTNPP_PEPSI
     public partial class FormDoiMatKhau : Form
     {
         NHANVIEN nvlog = FormDangNhap.nv;
+        FormDangNhap dangnhap = new FormDangNhap();
         NhanVien_DALBLL nv = new NhanVien_DALBLL();
-
+        FormTrangChu trangchu = new FormTrangChu();
         public FormDoiMatKhau()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace QTNPP_PEPSI
             //Kiểm tra ô nhập giá trị
             if (String.IsNullOrEmpty(txtPassword.Text) || String.IsNullOrEmpty(txtNewPass.Text) || String.IsNullOrEmpty(txtRePass.Text))
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ giá trị!", "Thông báo");
+                MessageBox.Show("Vui lòng nhập đầy đủ giá trị !", "Thông báo");
                 return;
             }
 
@@ -36,32 +37,32 @@ namespace QTNPP_PEPSI
                 {
                     if (txtPassword.Text == txtNewPass.Text)
                     {
-                        MessageBox.Show("Mật khẩu mới và mật khẩu hiện tại không được trùng nhau!", "Thông báo");
+                        MessageBox.Show("Mật khẩu mới và mật khẩu hiện tại không được trùng nhau !", "Thông báo");
                         txtNewPass.Focus();
                         return;
                     }
 
                     if (nv.doiMatKhau(nvlog.TENDANGNHAP, txtNewPass.Text))
                     {
-                        MessageBox.Show("Đổi mật khẩu thành công!", "Thông báo");
+                        MessageBox.Show("Đổi mật khẩu thành công !", "Thông báo");
                         this.Hide();
                     }
                     else
                     {
-                        MessageBox.Show("Đổi thất bại!", "Thông báo");
+                        MessageBox.Show("Đổi thất bại", "Thông báo");
                         return;
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Mật khẩu mới phải trùng khớp với mật khẩu xác nhận!", "Thông báo");
+                    MessageBox.Show("Mật khẩu mới phải trùng khớp với mật khẩu xác nhận !", "Thông báo");
                     txtNewPass.Focus();
                     return;
                 }
             }
             else
             {
-                MessageBox.Show("Mật khẩu hiện tại sai. Vui lòng nhập lại!", "Thông báo");
+                MessageBox.Show("Mật khẩu hiện tại sai. Vui lòng nhập lại !", "Thông báo");
                 txtPassword.Focus();
                 return;
             }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace QTNPP_PEPSI
 {
     public partial class FormTimKiemNhanVien : Form
-    {
+    { 
         public FormTimKiemNhanVien()
         {
             InitializeComponent();

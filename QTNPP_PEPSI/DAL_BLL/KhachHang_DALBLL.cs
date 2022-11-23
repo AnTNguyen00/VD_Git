@@ -10,42 +10,57 @@ namespace DAL_BLL
     {
         QLNPP_PEPSI1DataContext QLNPP_PS = new QLNPP_PEPSI1DataContext();
 
-        #region Load dữ liệu khách hàng
-        public IQueryable load_KhachHang()
+        #region Load dữ liệu khách hàng theo hóa đơn bán
+        public IQueryable load_TenKH()
         {
-            var kh = from k in QLNPP_PS.KHACHHANGs select new { k.MAKH, k.MAQUANHUYEN, k.HOTENKH, k.LOAIKHACHHANG, k.NGAYSINHKH, k.GIOITINHKH, k.DIACHIKH, k.SODIENTHOAIKH };
+            var kh = from KhachHang in QLNPP_PS.KHACHHANGs select new { KhachHang.MAKH, KhachHang.HOTENKH };
             return kh;
         }
 
-        public List<KHACHHANG> getKhachHang()
+        public IQueryable load_TenKH1(string maHDB)
         {
-            return QLNPP_PS.KHACHHANGs.Select(k => k).ToList<KHACHHANG>();
+            var khach = from kh in QLNPP_PS.KHACHHANGs
+                        join hdb in QLNPP_PS.HOADONBANs
+                            on kh.MAKH equals hdb.MAKH
+                        where hdb.MAHDB == maHDB
+                        select new { kh.HOTENKH, kh.MAKH };
+            return khach;
         }
 
-        public List<string> load_GioiTinh(string maKH)
+        public List<KHACHHANG> load_DiaChi(string maKH)
         {
-            List<string> kh = new List<string>();
-            var gioitinh = (from gt in QLNPP_PS.KHACHHANGs
-                          where gt.MAKH == maKH
-                          select gt.GIOITINHKH).ToList();
-            kh.AddRange(gioitinh);
-            return kh;
+            List<KHACHHANG> dc = new List<KHACHHANG>();
+            var diachi = (from dchi in QLNPP_PS.KHACHHANGs
+                          where dchi.MAKH == maKH
+                          select dchi).ToList();
+            dc.AddRange(diachi);
+            return dc;
         }
+
 
         #endregion
 
-        #region Load dữ liệu khách hàng theo đăng ký CTTB - CTTL
-
-        public IQueryable load_TenKH()
+        #region Load dữ liệu khách hàng theo hóa đơn xuất
+        public IQueryable load_TenKH2()
         {
-            var kh = from k in QLNPP_PS.KHACHHANGs select new { k.MAKH, k.MAQUANHUYEN, k.HOTENKH, k.LOAIKHACHHANG, k.NGAYSINHKH, k.GIOITINHKH, k.DIACHIKH, k.SODIENTHOAIKH };
+            var kh = from KhachHang in QLNPP_PS.KHACHHANGs select new { KhachHang.MAKH, KhachHang.HOTENKH };
             return kh;
+        }
+
+        public IQueryable load_TenKH3(string maPX)
+        {
+            var khach = from kh in QLNPP_PS.KHACHHANGs
+                        join px in QLNPP_PS.PHIEUXUATHANGs
+                            on kh.MAKH equals px.MAKH
+                        where px.MAPX == maPX
+                        select new { kh.HOTENKH, kh.MAKH };
+            return khach;
         }
 
         #endregion
 
         #region Thêm xóa sửa khách hàng
-        public bool insert_KH(string maKH, string maQH, string tenKH, string loaiKH, string ngaySinh, string gioiTinh, string diaChi, string sDT)
+        public bool insertKhachHang(string maKH, string maQH, string tenKH, string loaiKH, string ngaySinh, string gioiTinh, string diaChi, string sDT)
         {
             try
             {
@@ -67,7 +82,7 @@ namespace DAL_BLL
                 return false;
             }
         }
-        public bool delete_KH(string maKH)
+        public bool deleteKhachHang(string maKH)
         {
             try
             {
@@ -81,7 +96,7 @@ namespace DAL_BLL
                 return false;
             }
         }
-        public bool update_KH(string maKH, string maQH, string tenKH, string loaiKH, string ngaySinh, string gioiTinh, string diaChi, string sDT)
+        public bool updateKhachHang(string maKH, string maQH, string tenKH, string loaiKH, string ngaySinh, string gioiTinh, string diaChi, string sDT)
         {
             KHACHHANG khachhang = QLNPP_PS.KHACHHANGs.Where(k => k.MAKH == maKH).FirstOrDefault();
             if (khachhang != null)

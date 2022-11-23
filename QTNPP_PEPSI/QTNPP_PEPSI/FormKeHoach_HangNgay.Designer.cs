@@ -37,7 +37,6 @@ namespace QTNPP_PEPSI
             this.mnsMain = new System.Windows.Forms.MenuStrip();
             this.mnsiThemViec = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsiHomNay = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsiThoat = new System.Windows.Forms.ToolStripMenuItem();
             this.panelEx2.SuspendLayout();
             this.mnsMain.SuspendLayout();
             this.SuspendLayout();
@@ -119,8 +118,7 @@ namespace QTNPP_PEPSI
             this.mnsMain.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnsMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnsiThemViec,
-            this.mnsiHomNay,
-            this.mnsiThoat});
+            this.mnsiHomNay});
             this.mnsMain.Location = new System.Drawing.Point(0, 0);
             this.mnsMain.Name = "mnsMain";
             this.mnsMain.Size = new System.Drawing.Size(620, 28);
@@ -142,14 +140,6 @@ namespace QTNPP_PEPSI
             this.mnsiHomNay.Name = "mnsiHomNay";
             this.mnsiHomNay.Size = new System.Drawing.Size(83, 24);
             this.mnsiHomNay.Text = "Hôm nay";
-            // 
-            // mnsiThoat
-            // 
-            this.mnsiThoat.BackColor = System.Drawing.Color.Red;
-            this.mnsiThoat.ForeColor = System.Drawing.Color.White;
-            this.mnsiThoat.Name = "mnsiThoat";
-            this.mnsiThoat.Size = new System.Drawing.Size(61, 24);
-            this.mnsiThoat.Text = "Thoát";
             // 
             // FormKeHoach_HangNgay
             // 
@@ -179,6 +169,5 @@ namespace QTNPP_PEPSI
         private System.Windows.Forms.ToolStripMenuItem mnsiHomNay;
         private DevComponents.DotNetBar.ButtonX btnNgayMai;
         private DevComponents.DotNetBar.ButtonX btnHomQua;
-        private System.Windows.Forms.ToolStripMenuItem mnsiThoat;
     }
 }

@@ -51,7 +51,7 @@ namespace QTNPP_PEPSI
                 SqlCommand cmd3 = new SqlCommand(str3, con);
                 cmd3.ExecuteNonQuery();
 
-                MessageBox.Show("Khôi phục dữ liệu thành công");
+                MessageBox.Show("Phục hồi dữ liệu thành công");
                 con.Close();
             }
             catch { }

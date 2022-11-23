@@ -40,13 +40,13 @@ namespace QTNPP_PEPSI
             this.btnThem = new DevComponents.DotNetBar.ButtonX();
             this.btnTaoMoi = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.txtLoaiXuatXu = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtTenXuatXu = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.txtMaXuatXu = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.txtTenXuatXu = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.groupPanel2.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GVXuatXu)).BeginInit();
@@ -160,6 +160,7 @@ namespace QTNPP_PEPSI
             this.GVXuatXu.RowTemplate.Height = 24;
             this.GVXuatXu.Size = new System.Drawing.Size(622, 235);
             this.GVXuatXu.TabIndex = 46;
+            this.GVXuatXu.Click += new System.EventHandler(this.GVXuatXu_Click);
             // 
             // panelEx2
             // 
@@ -193,9 +194,10 @@ namespace QTNPP_PEPSI
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 31);
             this.btnSua.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSua.TabIndex = 12;
+            this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextColor = System.Drawing.Color.White;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThoat
             // 
@@ -206,9 +208,10 @@ namespace QTNPP_PEPSI
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 31);
             this.btnThoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnThoat.TabIndex = 11;
+            this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextColor = System.Drawing.Color.White;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnXoa
             // 
@@ -219,9 +222,10 @@ namespace QTNPP_PEPSI
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 31);
             this.btnXoa.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnXoa.TabIndex = 8;
+            this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextColor = System.Drawing.Color.White;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -232,9 +236,10 @@ namespace QTNPP_PEPSI
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 31);
             this.btnThem.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnThem.TabIndex = 7;
+            this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextColor = System.Drawing.Color.White;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnTaoMoi
             // 
@@ -245,9 +250,10 @@ namespace QTNPP_PEPSI
             this.btnTaoMoi.Name = "btnTaoMoi";
             this.btnTaoMoi.Size = new System.Drawing.Size(75, 31);
             this.btnTaoMoi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnTaoMoi.TabIndex = 6;
+            this.btnTaoMoi.TabIndex = 7;
             this.btnTaoMoi.Text = "Tạo Mới";
             this.btnTaoMoi.TextColor = System.Drawing.Color.White;
+            this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
             // 
             // groupPanel1
             // 
@@ -290,92 +296,6 @@ namespace QTNPP_PEPSI
             this.groupPanel1.TabIndex = 72;
             this.groupPanel1.Text = "Thông tin xuất xứ";
             // 
-            // txtLoaiXuatXu
-            // 
-            // 
-            // 
-            // 
-            this.txtLoaiXuatXu.Border.Class = "TextBoxBorder";
-            this.txtLoaiXuatXu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtLoaiXuatXu.Enabled = false;
-            this.txtLoaiXuatXu.Location = new System.Drawing.Point(257, 129);
-            this.txtLoaiXuatXu.Name = "txtLoaiXuatXu";
-            this.txtLoaiXuatXu.PreventEnterBeep = true;
-            this.txtLoaiXuatXu.Size = new System.Drawing.Size(195, 22);
-            this.txtLoaiXuatXu.TabIndex = 60;
-            // 
-            // labelX2
-            // 
-            this.labelX2.AutoSize = true;
-            this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX2.Location = new System.Drawing.Point(125, 129);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(100, 22);
-            this.labelX2.TabIndex = 59;
-            this.labelX2.Text = "Loại Xuất Xứ";
-            // 
-            // txtMaXuatXu
-            // 
-            // 
-            // 
-            // 
-            this.txtMaXuatXu.Border.Class = "TextBoxBorder";
-            this.txtMaXuatXu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtMaXuatXu.Location = new System.Drawing.Point(257, 28);
-            this.txtMaXuatXu.Name = "txtMaXuatXu";
-            this.txtMaXuatXu.PreventEnterBeep = true;
-            this.txtMaXuatXu.Size = new System.Drawing.Size(196, 22);
-            this.txtMaXuatXu.TabIndex = 57;
-            // 
-            // labelX1
-            // 
-            this.labelX1.AutoSize = true;
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX1.Location = new System.Drawing.Point(131, 28);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(91, 22);
-            this.labelX1.TabIndex = 31;
-            this.labelX1.Text = "Mã Xuất Xứ";
-            // 
-            // txtTenXuatXu
-            // 
-            // 
-            // 
-            // 
-            this.txtTenXuatXu.Border.Class = "TextBoxBorder";
-            this.txtTenXuatXu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTenXuatXu.Enabled = false;
-            this.txtTenXuatXu.Location = new System.Drawing.Point(257, 78);
-            this.txtTenXuatXu.Name = "txtTenXuatXu";
-            this.txtTenXuatXu.PreventEnterBeep = true;
-            this.txtTenXuatXu.Size = new System.Drawing.Size(195, 22);
-            this.txtTenXuatXu.TabIndex = 58;
-            // 
-            // labelX4
-            // 
-            this.labelX4.AutoSize = true;
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX4.Location = new System.Drawing.Point(121, 78);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(101, 22);
-            this.labelX4.TabIndex = 53;
-            this.labelX4.Text = "Tên  Xuất Xứ";
-            // 
             // panelEx1
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
@@ -399,6 +319,92 @@ namespace QTNPP_PEPSI
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 77;
             // 
+            // txtLoaiXuatXu
+            // 
+            // 
+            // 
+            // 
+            this.txtLoaiXuatXu.Border.Class = "TextBoxBorder";
+            this.txtLoaiXuatXu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtLoaiXuatXu.Enabled = false;
+            this.txtLoaiXuatXu.Location = new System.Drawing.Point(257, 129);
+            this.txtLoaiXuatXu.Name = "txtLoaiXuatXu";
+            this.txtLoaiXuatXu.PreventEnterBeep = true;
+            this.txtLoaiXuatXu.Size = new System.Drawing.Size(195, 22);
+            this.txtLoaiXuatXu.TabIndex = 2;
+            // 
+            // txtTenXuatXu
+            // 
+            // 
+            // 
+            // 
+            this.txtTenXuatXu.Border.Class = "TextBoxBorder";
+            this.txtTenXuatXu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTenXuatXu.Enabled = false;
+            this.txtTenXuatXu.Location = new System.Drawing.Point(257, 78);
+            this.txtTenXuatXu.Name = "txtTenXuatXu";
+            this.txtTenXuatXu.PreventEnterBeep = true;
+            this.txtTenXuatXu.Size = new System.Drawing.Size(195, 22);
+            this.txtTenXuatXu.TabIndex = 1;
+            // 
+            // labelX2
+            // 
+            this.labelX2.AutoSize = true;
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX2.Location = new System.Drawing.Point(125, 129);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(100, 22);
+            this.labelX2.TabIndex = 59;
+            this.labelX2.Text = "Loại Xuất Xứ";
+            // 
+            // labelX4
+            // 
+            this.labelX4.AutoSize = true;
+            this.labelX4.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX4.Location = new System.Drawing.Point(121, 78);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(101, 22);
+            this.labelX4.TabIndex = 53;
+            this.labelX4.Text = "Tên  Xuất Xứ";
+            // 
+            // txtMaXuatXu
+            // 
+            // 
+            // 
+            // 
+            this.txtMaXuatXu.Border.Class = "TextBoxBorder";
+            this.txtMaXuatXu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtMaXuatXu.Location = new System.Drawing.Point(257, 28);
+            this.txtMaXuatXu.Name = "txtMaXuatXu";
+            this.txtMaXuatXu.PreventEnterBeep = true;
+            this.txtMaXuatXu.Size = new System.Drawing.Size(196, 22);
+            this.txtMaXuatXu.TabIndex = 0;
+            // 
+            // labelX1
+            // 
+            this.labelX1.AutoSize = true;
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.Location = new System.Drawing.Point(131, 28);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(91, 22);
+            this.labelX1.TabIndex = 31;
+            this.labelX1.Text = "Mã Xuất Xứ";
+            // 
             // FormXuatXu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -408,6 +414,7 @@ namespace QTNPP_PEPSI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormXuatXu";
             this.Text = "FormXuatXu";
+            this.Load += new System.EventHandler(this.FormXuatXu_Load);
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GVXuatXu)).EndInit();
