@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<PlanData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Job>
+    <PlanItem>
+      <Date>2022-07-23T14:54:57.1480364+07:00</Date>
+      <Job>Thử nghiệm</Job>
+      <FromTime>
+        <X>4</X>
+        <Y>0</Y>
+      </FromTime>
+      <ToTime>
+        <X>5</X>
+        <Y>0</Y>
+      </ToTime>
+      <Status>DONE</Status>
+    </PlanItem>
+    <PlanItem>
+      <Date>2022-07-22T14:54:57.1480364+07:00</Date>
+      <Job>Thử nghiệm thôi</Job>
+      <FromTime>
+        <X>1</X>
+        <Y>1</Y>
+      </FromTime>
+      <ToTime>
+        <X>2</X>
+        <Y>1</Y>
+      </ToTime>
+      <Status>COMING</Status>
+    </PlanItem>
+    <PlanItem>
+      <Date>2022-07-23T00:00:00</Date>
+      <Job>test</Job>
+      <FromTime>
+        <X>1</X>
+        <Y>1</Y>
+      </FromTime>
+      <ToTime>
+        <X>1</X>
+        <Y>1</Y>
+      </ToTime>
+      <Status>COMING</Status>
+    </PlanItem>
+    <PlanItem>
+      <Date>2022-07-23T00:00:00</Date>
+      <Job>pass</Job>
+      <FromTime>
+        <X>1</X>
+        <Y>1</Y>
+      </FromTime>
+      <ToTime>
+        <X>1</X>
+        <Y>1</Y>
+      </ToTime>
+      <Status>DOING</Status>
+    </PlanItem>
+  </Job>
+</PlanData>
