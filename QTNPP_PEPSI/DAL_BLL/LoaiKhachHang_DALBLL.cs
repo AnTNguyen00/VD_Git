@@ -83,13 +83,5 @@ namespace DAL_BLL
         }
 
         #endregion
-
-
-        #region khu vực thử nghiệm
-
-        ////---==============--////
-        // nguyễn anh thư
-
-        #endregion
     }
 }

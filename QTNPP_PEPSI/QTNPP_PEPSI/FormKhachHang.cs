@@ -33,7 +33,7 @@ namespace QTNPP_PEPSI
 
 
             //Khởi tạo combobox Quận huyện
-            cbbQuanHuyen.DataSource = quanhuyen.load_TenQuanHuyen();
+            cbbQuanHuyen.DataSource = quanhuyen.load_TenQuanHuyen1();
             cbbQuanHuyen.DisplayMember = "TENQUANHUYEN";
             cbbQuanHuyen.ValueMember = "MAQUANHUYEN";
 
